@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Инфраструктура — Макеевка</title>
+  <link rel="icon" href="images/city_emblem.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/infrastructure.css">
+  <link rel="stylesheet" href="css/extras.css">
+</head>
+<body>
+  <header>
+    <h1>Инфраструктура города</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="infrastructure.html">Инфраструктура</a></li>
+        <li><a href="culture.html">Культура</a></li>
+        <li><a href="about.html">О разработчике</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Географическое положение</h2>
+
+    <p>
+      Город Макеевка расположен в центральной части Донбасса, на реке Грузской. 
+      Находится в 13 км от Донецка, с которым фактически образует единую агломерацию.
+    </p>
+
+    <p>
+      Город расположен на Донецком кряже, высота над уровнем моря составляет 
+      120-250 метров. Рельеф холмистый, изрезанный балками и оврагами.
+    </p>
+
+    <p>
+      Площадь города составляет 426 км². Макеевка — один из крупнейших по площади 
+      городов Донбасса.
+    </p>
+
+    <p>
+      Город граничит с:
+    </p>
+
+    <ul>
+      <li>северо-восток — г. Донецк</li>
+      <li>юг — Харцызск и Зугрес</li>
+      <li>запад — Ясиноватский район</li>
+    </ul>
+
+    <section class="map-section">
+      <h3>Карта города</h3>
+      <p class="muted">
+        Интерактивную карту можно перемещать и увеличивать.
+      </p>
+
+      <div class="map-wrapper" aria-hidden="false">
+        <iframe
+          title="Карта Макеевки"
+          src="https://www.google.com/maps?q=Макеевка&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="admin-division">
+      <h3>Административное деление</h3>
+      <p><strong>Город разделен на 5 административных районов:</strong></p>
+      <ol>
+        <li>Центрально-Городской район</li>
+        <li>Червоногвардейский район</li>
+        <li>Горняцкий район</li>
+        <li>Советский район</li>
+        <li>Кировский район</li>
+      </ol>
+    </section>
+
+    <section class="transport">
+      <h3>Система общественного транспорта</h3>
+
+      <p>
+        Макеевка имеет развитую транспортную сеть, соединённую с Донецком.
+      </p>
+
+      <h4>Основные маршруты</h4>
+
+      <div class="table-wrap">
+        <table class="transport-table" aria-describedby="transport-desc">
+          <caption id="transport-desc">Основные маршруты общественного транспорта Макеевки</caption>
+          <thead>
+            <tr>
+              <th>Маршрут</th>
+              <th>Направление</th>
+              <th>Интервал</th>
+              <th>Время работы</th>
+              <th>Тип транспорта</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>№1</td>
+              <td>Центр — Металлургический завод</td>
+              <td>10-15 мин</td>
+              <td>5:30-23:00</td>
+              <td>Автобус</td>
+            </tr>
+            <tr>
+              <td>№5</td>
+              <td>Вокзал — Шахта им. Бажанова</td>
+              <td>15-20 мин</td>
+              <td>6:00-22:30</td>
+              <td>Троллейбус</td>
+            </tr>
+            <tr>
+              <td>№12</td>
+              <td>Донецк (ЦУМ) — Макеевка (Центр)</td>
+              <td>7-10 мин</td>
+              <td>5:00-24:00</td>
+              <td>Маршрутное такси</td>
+            </tr>
+            <tr>
+              <td>№25</td>
+              <td>Ж/д вокзал — Посёлок шахты "Холодная Балка"</td>
+              <td>20-25 мин</td>
+              <td>6:00-21:00</td>
+              <td>Автобус</td>
+            </tr>
+            <tr>
+              <td>№101</td>
+              <td>Макеевка — Донецкий аэропорт</td>
+              <td>30-40 мин</td>
+              <td>7:00-20:00</td>
+              <td>Автобус</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="transport-details">
+        <h4>Подробности по транспорту</h4>
+
+        <details>
+          <summary>Железнодорожное сообщение</summary>
+          <p>Макеевка имеет железнодорожную станцию на линии Ясиноватая — Иловайск. Есть пригородные электрички до Донецк и других городов.</p>
+        </details>
+
+        <details>
+          <summary>Троллейбусная сеть</summary>
+          <p>В Макеевке работает 5 троллейбусных маршрутов. Троллейбусное депо расположено в центре города.</p>
+        </details>
+
+        <details>
+          <summary>Такси и каршеринг</summary>
+          <p>В городе работают несколько служб такси, есть возможность аренды автомобилей.</p>
+        </details>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025</p>
+  </footer>
+  <a href="#top" id="back-to-top" aria-label="Наверх">↑ Наверх</a>
+</body>
+</html>

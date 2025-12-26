@@ -1,0 +1,70 @@
+main {
+  padding: 16px;
+  color: #333;
+}
+
+.intro { margin-bottom: 18px; }
+.intro p { max-width: none; }
+
+.culture-block {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+}
+
+.culture-block h3 { margin-top: 0; }
+.culture-block .muted { color: #666; margin-bottom: 10px; }
+
+.places-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.places-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f2f4;
+}
+.places-list li:last-child { border-bottom: 0; }
+.places-list h4 { margin: 0 0 6px; font-size: 1.02rem; }
+.places-list p { margin: 0; color: #444; }
+
+.figures-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 12px;
+}
+
+.figure-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.figure-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.figure-card-body {
+  padding: 12px;
+}
+
+.figure-card-body h4 { margin: 0 0 6px; font-size: 1.05rem; }
+.figure-card-body .role { color: #777; margin: 0 0 8px; font-size: 0.95rem; }
+.figure-card-body .bio { margin: 0; color: #444; font-size: 0.95rem; }
+
+.muted { color: #777; font-size: .95rem; }
+
+@media (max-width: 640px) {
+  .figure-card img { height: auto; }
+  main { padding: 12px; }
+}

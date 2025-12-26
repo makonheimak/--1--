@@ -1,0 +1,131 @@
+/* about.css - Стили для страницы "О разработчике" */
+
+.about-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.profile-photo {
+  flex: 0 0 250px;
+}
+
+.profile-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.profile-info h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.bio, .contacts {
+  margin-bottom: 1.5rem;
+}
+
+.bio h3, .contacts h3 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.contacts a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contacts a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.skills {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.skills h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, var(--secondary-color), #2aa7ff);
+  border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(90deg, var(--secondary-color), #2aa7ff);
+  border-radius: 10px;
+}
+
+.skill-value {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-photo {
+    flex: 0 0 200px;
+  }
+}

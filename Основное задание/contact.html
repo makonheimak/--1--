@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Контакты</title>
+  <link rel="icon" href="images/city_emblem.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/extras.css">
+</head>
+<body>
+  <header>
+    <h1>Контакты</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="infrastructure.html">Инфраструктура</a></li>
+        <li><a href="culture.html">Культура</a></li>
+        <li><a href="about.html">О разработчике</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Форма обратной связи</h2>
+    <form action="mailto:admin@makeevka-city.ru" method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Отправить сообщение</legend>
+
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" required minlength="2" maxlength="50" placeholder="Введите ваше имя">
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required placeholder="Введите e-mail">
+
+        <label for="subject">Тема</label>
+        <input list="subjects" id="subject" name="subject" placeholder="Выберите тему (или введите свою)">
+        <datalist id="subjects">
+          <option value="Вопрос по истории города">
+          <option value="Предложение по развитию">
+          <option value="Информация для туристов">
+          <option value="Сотрудничество">
+          <option value="Другое">
+        </datalist>
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" required minlength="10" maxlength="1000" placeholder="Ваше сообщение..."></textarea>
+
+        <button type="submit">Отправить</button>
+      </fieldset>
+
+      <output id="result" name="result" for="message name email">Результат отправки появится здесь</output>
+    </form>
+
+    <address>
+      Администрация города Макеевка<br>
+      <strong>Адрес:</strong> ул. Ленина, 15, г. Макеевка, ДНР<br>
+      <strong>Телефон:</strong> +38 (062) 723-45-67<br>
+      <strong>E-mail:</strong> <a href="mailto:admin@makeevka-city.ru">admin@makeevka-city.ru</a><br>
+      <strong>Режим работы:</strong> пн-чт 9:00-18:00, пт 9:00-17:00<br>
+      <strong>Обед:</strong> 13:00-14:00
+    </address>
+  </main>
+
+  <footer>
+    <p>© 2025</p>
+  </footer>
+  <a href="#top" id="back-to-top" aria-label="Наверх">↑ Наверх</a>
+</body>
+</html>

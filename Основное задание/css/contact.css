@@ -1,0 +1,82 @@
+/* contact.css - Стили для страницы контактов */
+
+main > h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+fieldset {
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  color: var(--primary-color);
+  font-weight: bold;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+datalist {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 200px;
+}
+
+output {
+  display: block;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-top: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+address {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  font-style: normal;
+  line-height: 1.6;
+}
+
+address strong {
+  color: var(--primary-color);
+}
+
+address a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}

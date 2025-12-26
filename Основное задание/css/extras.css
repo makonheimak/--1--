@@ -1,0 +1,80 @@
+/* extras-lite.css
+   Лёгкий вспомогательный файл — только безопасные утилиты и декоративные мелочи.
+   Не содержит глобальных правил (p, a, tr и т.п.), чтобы не конфликтовать с main/page CSS.
+*/
+
+/* Sticky header helper — применяется только если вы добавите класс .header-sticky на header */
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* фон/цвет задавайте локально в main.css, здесь — минимальные безопасные значения */
+  background-color: rgba(11,103,165,0.98);
+  color: #fff;
+  padding: 6px;
+}
+
+/* Кнопка "Наверх" — используется элемент с id="back-to-top" (у вас уже есть в HTML) */
+#back-to-top {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  padding: 8px 10px;
+  background: linear-gradient(90deg, #2aa7ff, #0b67a5);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 6px 16px rgba(10, 60, 100, 0.18);
+  transition: transform 0.14s ease, opacity 0.18s ease;
+  opacity: 0.98;
+}
+
+/* Скрываем кнопку на очень маленьких экранах (по желанию) */
+@media (max-width: 420px) {
+  #back-to-top { right: 8px; bottom: 8px; padding: 7px 8px; font-size: 13px; }
+}
+
+/* Декоративный маркер для заголовков секций (без влияния на текст) */
+.section-title::before {
+  content: "★ ";
+  color: #0b67a5;
+  margin-right: 6px;
+}
+.section-title::after {
+  content: " ★";
+  color: #2aa7ff;
+  margin-left: 6px;
+}
+
+/* Лёгкая подсветка для "muted" — безопасно использовать в любых блоках */
+.muted { color: #666; font-size: 0.95rem; }
+
+/* Hero overlay (если нужен) — применяется только к .hero .overlay, не трогает .hero сам по себе */
+.hero .overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* Небольшие утилиты — контейнер с относительным позиционированием (без глобальных side-эффектов) */
+.relative-box { position: relative; }
+
+/* Плавное появление/исчезновение (для JS-управления, если понадобится) */
+.hidden { display: none !important; }
+.fade-in { animation: fadeIn 0.28s ease both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Служебные мелочи (безопасные): плавающий блок для картинки и отступ */
+.float-left { float: left; margin: 0 12px 12px 0; max-width: 200px; }
+
+/* Локальная настройка цитат/языков — безопасно */
+:lang(ru) { quotes: "«" "»"; }
+
+/* Ничего глобального не переопределяем (нет p, a, tr и т.д.) */
